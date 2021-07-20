@@ -2,6 +2,7 @@ import { useState } from 'react'
 import WhatIs from '../components/WhatIs'
 import WhatDoIDo from '../components/WhatDoIDo'
 import Rules from '../components/Rules'
+import WhereWhen from '../components/WhereWhen'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -45,6 +46,7 @@ export default function Home() {
       <WhatIs />
       <WhatDoIDo />
       <Rules />
+      <WhereWhen />
       
       <div id="form">
         <form>
