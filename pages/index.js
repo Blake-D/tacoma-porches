@@ -1,7 +1,10 @@
 import { useState } from 'react'
+import WhatIs from '../components/WhatIs'
+import WhatDoIDo from '../components/WhatDoIDo'
+import Rules from '../components/Rules'
 import styles from '../styles/Home.module.css'
 
-export default function Home(){
+export default function Home() {
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -27,7 +30,7 @@ export default function Home(){
       body: JSON.stringify(data)
     }).then((res) => {
       console.log('Respone received')
-      if(res.statis === 200){
+      if (res.statis === 200) {
         console.log('Response succeeded!')
         setSubmitted(true)
         setName('')
@@ -37,21 +40,27 @@ export default function Home(){
     })
   }
 
-  return(
+  return (
     <div>
-      <form>
-        <label htmlFor='name'>Name</label>
-        <input type='text' name='name' onChange={(e)=>{setName(e.target.value)}}/>
+      <WhatIs />
+      <WhatDoIDo />
+      <Rules />
+      
+      <div id="form">
+        <form>
+          <label htmlFor='name'>Name</label>
+          <input type='text' name='name' onChange={(e) => { setName(e.target.value) }} />
 
-        <label htmlFor='email'>Email</label>
-        <input type='email' name='email' onChange={(e)=>{setEmail(e.target.value)}}/>
+          <label htmlFor='email'>Email</label>
+          <input type='email' name='email' onChange={(e) => { setEmail(e.target.value) }} />
 
-        <label htmlFor='message'>Message</label>
-        <input type='text' name='message' onChange={(e)=>{setMessage(e.target.value)}}/>
+          <label htmlFor='message'>Message</label>
+          <input type='text' name='message' onChange={(e) => { setMessage(e.target.value) }} />
 
-        <input type='submit' onClick={(e) => {handleSubmit(e)}}/>
+          <input type='submit' onClick={(e) => { handleSubmit(e) }} />
 
-      </form>
+        </form>
+      </div>
     </div>
   )
 }
