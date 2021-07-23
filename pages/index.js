@@ -5,7 +5,7 @@ import WhatDoIDo from '../components/WhatDoIDo'
 import Rules from '../components/Rules'
 import WhereWhen from '../components/WhereWhen'
 import HowMuch from '../components/HowMuch'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
@@ -45,12 +45,19 @@ export default function Home() {
 
   return (
     <div>
+      <div id="parallax1">Tacoma PorchFest</div>
       <WhatIs />
+      <div id="parallax2"></div>
       <HowDoesItWork />
+      <div id="parallax3"></div>
       <WhatDoIDo />
+      <div id="parallax4"></div>
       <Rules />
+      <div id="parallax5"></div>
       <WhereWhen />
+      <div id="parallax6"></div>
       <HowMuch />
+      <div id="parallax7"></div>
       <div id="form">
         <h1>Volunteer your porch, sign up your band, or request more info:</h1>
         <form>

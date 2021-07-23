@@ -1,9 +1,16 @@
 html,
 body {
+  background-color: rgb(241, 241, 151);
+  text-align: center;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+li{
+  text-align: left;
+  font-size: 5vmin;
 }
 
 /* a {
@@ -13,4 +20,63 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+h1{
+  font-size: 15vmin;
+}
+
+p{
+  font-size: 5vmin;
+}
+
+.info{
+  margin: 3vmin;
+  border-top: solid black 1vmin;
+  border-bottom: solid black 1vmin;
+}
+
+#parallax1, #parallax2, #parallax3, #parallax4, #parallax5, #parallax6, #parallax7 {
+  position: relative;
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#parallax1{
+  background-image: url('/band.jpeg');
+  padding-top: 5vmin;
+  font-size: 20vmin;
+  color: white;
+}
+
+#parallax2{
+  background-image: url('/band2.jpeg');
+}
+
+#parallax3{
+  background-image: url('/band3.jpeg');
+}
+
+#parallax4{
+  background-image: url('/band4.jpeg');
+}
+
+#parallax5{
+  background-image: url('/band5.jpeg');
+}
+
+#parallax6{
+  background-image: url('/band6.jpeg');
+}
+
+#parallax7{
+  background-image: url('/band7.jpeg');
+}
+
+#form{
+  margin: 3vmin;
+  border-top: solid black 1vmin;
 }
