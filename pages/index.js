@@ -59,22 +59,24 @@ export default function Home() {
       <HowMuch />
       <div id="parallax7"></div>
       <section>
-        <h1>Volunteer your porch, sign up your band, or request more info:</h1>
-        <form>
-          <label htmlFor='name'>Name</label>
-          <input type='text' name='name' onChange={(e) => { setName(e.target.value) }} />
-          <br></br>
-          <br></br>
-          <label htmlFor='email'>Email</label>
-          <input type='email' name='email' onChange={(e) => { setEmail(e.target.value) }} />
-          <br></br>
-          <br></br>
-          <label htmlFor='message'>Message</label>
-          <input type='text' name='message' onChange={(e) => { setMessage(e.target.value) }} />
-          <br></br>
-          <br></br>
-          <input type='submit' onClick={(e) => { handleSubmit(e) }} />
-        </form>
+        <h2>Volunteer your porch, sign up your band, or request more info:</h2>
+        <div id="form-container">
+          <form>
+            <label htmlFor='name'>Name</label>
+            <input type='text' name='name' onChange={(e) => { setName(e.target.value) }} />
+            <br></br>
+            <br></br>
+            <label htmlFor='email'>Email</label>
+            <input type='email' name='email' onChange={(e) => { setEmail(e.target.value) }} />
+            <br></br>
+            <br></br>
+            <label htmlFor='message'>Message</label>
+            <textarea type='text' name='message' onChange={(e) => { setMessage(e.target.value) }} />
+            <br></br>
+            <br></br>
+            <input type='submit' onClick={(e) => { handleSubmit(e) }} />
+          </form>
+        </div>
       </section>
     </div>
   )

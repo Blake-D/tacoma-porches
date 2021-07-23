@@ -19,6 +19,14 @@ li{
 
 h1{
   font-size: 15vmin;
+  padding: 0;
+  margin: 0;
+}
+
+h2{
+  text-align: left;
+  padding: 1vmin;
+  margin: 1vmin;
 }
 
 p{
@@ -28,6 +36,21 @@ p{
 section{
   border-top: solid black 1vmin;
   border-bottom: solid black 1vmin;
+}
+
+form{
+  margin-left: 4vmin;
+  text-align: left;
+  font-size: 5vmin;
+  font-weight: bold;
+}
+
+input{
+  font-size: 5vmin;
+}
+
+textarea{
+  font-size: 5vw;
 }
 
 .info{
@@ -76,6 +99,5 @@ section{
 }
 
 #form{
-  margin: 3vmin;
   border-top: solid black 1vmin;
 }
