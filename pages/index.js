@@ -58,7 +58,7 @@ export default function Home() {
       <div id="parallax6"></div>
       <HowMuch />
       <div id="parallax7"></div>
-      <div id="form">
+      <section>
         <h1>Volunteer your porch, sign up your band, or request more info:</h1>
         <form>
           <label htmlFor='name'>Name</label>
@@ -74,9 +74,8 @@ export default function Home() {
           <br></br>
           <br></br>
           <input type='submit' onClick={(e) => { handleSubmit(e) }} />
-
         </form>
-      </div>
+      </section>
     </div>
   )
 }
